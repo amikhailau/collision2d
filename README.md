@@ -1,3 +1,4 @@
+FORKED FROM github.com/Tarliton/collision2d for personal usage
 Collision2D
 ======
 
