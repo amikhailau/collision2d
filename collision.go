@@ -108,7 +108,7 @@ func TestPolygonCircle(polygon Polygon, circle Circle) (isColliding bool, respon
 			normal := edge.Perp().Normalize()
 			dist := point.Dot(normal)
 			distAbs := math.Abs(dist)
-			if dist > 0 && distAbs > radius {
+			if distAbs > radius {
 				return false, response.NotColliding()
 			}
 			overlapN = overlapN.Copy(normal)
